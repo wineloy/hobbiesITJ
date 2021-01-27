@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CRUD Eloy Garcia Ceja</string>
+    <string name="descripcion_app">Esta aplicación forma parte del proyecto de la unidad IV
+        de la materia de Desarrollo de Aplicaciones para Dispositivos Móviles impartida por el profesor
+        Othoniel Rivera Méndez</string>
+    <string-array name="alumnoSexo">
+        <item>Mujer</item>
+        <item>Hombre</item>
+    </string-array>
+
+</resources>
