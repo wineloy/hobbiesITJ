@@ -11,6 +11,14 @@ public class ConexionSQLiteOpenHelper extends SQLiteOpenHelper {
     final static String ALUMNOS = "ALUMNOS";
     final static  String HOBBIE = "HOBBIE";
     final static int VERSION = 1;
+
+    @Override public void onOpen(SQLiteDatabase db) {
+        super.onOpen(db);
+        if (!db.isReadOnly()) {
+        // Habilito las llaves foraneas
+            db.execSQL("PRAGMA foreign_keys=ON;");
+        }
+    }
     public ConexionSQLiteOpenHelper(@Nullable Context context) {
 
         super(context, DB_NAME, null, VERSION);
@@ -18,8 +26,6 @@ public class ConexionSQLiteOpenHelper extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase Hobbies) {
-        //para habilitar el borrado en cascada
-        Hobbies.execSQL(String.format("PRAGMA foreign_keys = ON"));
         //Creacion de tablas con escape de inyeccion SQL
         Hobbies.execSQL(String.format("CREATE TABLE IF NOT EXISTS %s(IDALUMNO integer primary key autoincrement, NUMCONTROL text, NOMBRE text, SEXO text, TELEFONO TEXT)", ALUMNOS));
         Hobbies.execSQL(String.format("CREATE TABLE IF NOT EXISTS %s(IDHOBBIES integer primary key autoincrement, IDALUMNO integer, DESCRIPCION text, DEDICACION text, FOREIGN KEY (IDALUMNO) REFERENCES ALUMNOS (IDALUMNO) ON DELETE CASCADE)", HOBBIE));
