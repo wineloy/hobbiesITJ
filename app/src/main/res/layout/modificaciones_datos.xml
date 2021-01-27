@@ -43,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="No. Control o Nombre"
+                    android:hint="No. Control"
                     android:inputType="textPersonName" />
 
                 <Button
