@@ -25,8 +25,8 @@ public class RegistrarAlumnos extends AppCompatActivity implements AdapterView.O
         setContentView(R.layout.registro_alumnos);
         btnRegistrar = findViewById(R.id.btnRegistrar);
         edtControl = findViewById(R.id.edtControl);
-        edtNombre = findViewById(R.id.edtNombre);
-        edtTelefono = findViewById(R.id.edtTelefono);
+        edtNombre = findViewById(R.id.edtNombreprimer);
+        edtTelefono = findViewById(R.id.edtTelefonoprimero);
         //spinner personalizado
         spinnerCustom = findViewById(R.id.spinnerCustom);
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this,

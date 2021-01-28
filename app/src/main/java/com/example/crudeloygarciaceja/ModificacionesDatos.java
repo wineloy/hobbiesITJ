@@ -43,9 +43,9 @@ public class ModificacionesDatos extends AppCompatActivity implements View.OnCli
         anterior = findViewById(R.id.anterior);
         // formulario
         edtNumeroControl = findViewById(R.id.edtNumeroControl);
-        edtNombre = findViewById(R.id.edtNombre);
+        edtNombre = findViewById(R.id.edtNombreprimer);
         edtSexo = findViewById(R.id.edtSexo);
-        edtTelefono = findViewById(R.id.edtTelefono);
+        edtTelefono = findViewById(R.id.edtTelefonoprimero);
         edtDescripcionHobbie = findViewById(R.id.edtDescripcionHobbie);
         edtTiempoHobbie = findViewById(R.id.edtTiempoHobbie);
         //Eventos
@@ -55,6 +55,9 @@ public class ModificacionesDatos extends AppCompatActivity implements View.OnCli
         btnBorrarHobbie.setOnClickListener(this);
         siguiente.setOnClickListener(this);
         anterior.setOnClickListener(this);
+
+        siguiente.setEnabled(false);
+        anterior.setEnabled(false);
     }
 
     @Override
