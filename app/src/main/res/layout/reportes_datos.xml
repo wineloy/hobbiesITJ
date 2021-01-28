@@ -79,6 +79,7 @@
                     android:ems="10"
                     android:enabled="false"
                     android:hint="No. Control"
+                    android:textColor="@color/black"
                     android:inputType="textPersonName" />/>
 
                 <EditText
@@ -89,6 +90,7 @@
                     android:ems="10"
                     android:enabled="false"
                     android:hint="Nombre"
+                    android:textColor="@color/black"
                     android:inputType="textPersonName" />/>
             </LinearLayout>
 
@@ -106,6 +108,7 @@
                     android:ems="10"
                     android:enabled="false"
                     android:hint="Sexo"
+                    android:textColor="@color/black"
                     android:inputType="textPersonName" />/>
 
                 <EditText
@@ -116,13 +119,14 @@
                     android:ems="10"
                     android:enabled="false"
                     android:hint="Telefono"
+                    android:textColor="@color/black"
                     android:inputType="textPersonName" />
             </LinearLayout>
             <TextView
                 android:id="@+id/HobbiesLista"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="3dp"
                 android:gravity="center"
                 android:text="Hobbies de Alumno"
@@ -130,7 +134,8 @@
                 android:textSize="17dp" />
             <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
 
                 <TableRow
                     android:layout_width="match_parent"
@@ -223,7 +228,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:hint="Descripción" />
+                        android:hint="Descripción"
+                        android:textColor="@color/black"/>
 
                     <TextView
                         android:id="@+id/dedicacionDos"
@@ -231,7 +237,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:hint="Dedicación" />
+                        android:hint="Dedicación"
+                        android:textColor="@color/black"/>
                 </TableRow>
 
                 <TableRow
@@ -255,6 +262,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:textColor="@color/black"
                         android:hint="Descripción" />
 
                     <TextView
@@ -263,6 +271,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:textColor="@color/black"
                         android:hint="Dedicación" />
                 </TableRow>
 
@@ -287,6 +296,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:textColor="@color/black"
                         android:hint="Descripción" />
 
                     <TextView
@@ -295,6 +305,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:textColor="@color/black"
                         android:hint="Dedicación" />
                 </TableRow>
 
