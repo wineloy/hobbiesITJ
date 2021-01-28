@@ -48,25 +48,31 @@ public class RegistrarAlumnos extends AppCompatActivity implements AdapterView.O
     }
 
     private void RegistrarAlumno(){
+
         String control = edtControl.getText().toString();
         String nombre = edtNombre.getText().toString();
         String sexo = spinnerCustom.getSelectedItem().toString();
         String telefono = edtTelefono.getText().toString();
 
         if (!control.isEmpty() && !nombre.isEmpty() && !sexo.isEmpty() && !telefono.isEmpty()){
-            ConexionSQLiteOpenHelper conexion = new ConexionSQLiteOpenHelper(this);
-            SQLiteDatabase hobbies = conexion.getWritableDatabase();
-            ContentValues value = new ContentValues();
-            value.put("NUMCONTROL",control);
-            value.put("NOMBRE",nombre);
-            value.put("SEXO",sexo);
-            value.put("TELEFONO",telefono);
-            long resultado = hobbies.insert("ALUMNOS",null,value);
-            Toast.makeText(this, "Alumno registrado correctamente",Toast.LENGTH_LONG).show();
-            conexion.close();
-            edtControl.setText("");;
-            edtNombre.setText("");
-            edtTelefono.setText("");
+            try {
+                ConexionSQLiteOpenHelper conexion = new ConexionSQLiteOpenHelper(this);
+                SQLiteDatabase hobbies = conexion.getWritableDatabase();
+                ContentValues value = new ContentValues();
+                value.put("NUMCONTROL",control);
+                value.put("NOMBRE",nombre);
+                value.put("SEXO",sexo);
+                value.put("TELEFONO",telefono);
+                long resultado = hobbies.insert("ALUMNOS",null,value);
+                Toast.makeText(this, "Alumno registrado correctamente",Toast.LENGTH_LONG).show();
+                conexion.close();
+                edtControl.setText("");;
+                edtNombre.setText("");
+                edtTelefono.setText("");
+            }catch (Exception e){
+                Toast.makeText(this, "Ups Hubo un error",Toast.LENGTH_LONG).show();
+            }
+
         }else
             Toast.makeText(this, "Debes de llenar todos los campos",Toast.LENGTH_LONG).show();
 
