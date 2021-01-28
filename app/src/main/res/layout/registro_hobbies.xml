@@ -55,7 +55,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/tvInformacion"
+                android:id="@+id/ListaAlumnos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -81,7 +81,7 @@
                     android:inputType="textPersonName" />/>
 
                 <EditText
-                    android:id="@+id/edtNombre"
+                    android:id="@+id/edtNombreprimer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -110,7 +110,7 @@
                     android:inputType="textPersonName" />/>
 
                 <EditText
-                    android:id="@+id/edtTelefono"
+                    android:id="@+id/edtTelefonoprimero"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

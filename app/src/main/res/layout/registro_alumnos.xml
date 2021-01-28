@@ -43,7 +43,7 @@
                 android:inputType="number" />
 
             <EditText
-                android:id="@+id/edtNombre"
+                android:id="@+id/edtNombreprimer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -61,7 +61,7 @@
                 android:textAlignment="textStart" />
 
             <EditText
-                android:id="@+id/edtTelefono"
+                android:id="@+id/edtTelefonoprimero"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -76,11 +76,6 @@
                 android:layout_marginTop="5dp"
                 android:text="Registrar" />
 
-            <Button
-                android:id="@+id/btnHobbie"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Registrar Hobbie" />
         </LinearLayout>
     </ScrollView>
 

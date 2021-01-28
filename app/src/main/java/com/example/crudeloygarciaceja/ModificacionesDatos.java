@@ -236,6 +236,9 @@ public class ModificacionesDatos extends AppCompatActivity implements View.OnCli
                     ListarHobbies();
                     conn.close();
                     db.close();
+                    ListarHobbies();
+                    siguiente.setEnabled(false);
+                    anterior.setEnabled(false);
                 }
             });
             Diaboton.setNegativeButton("NO", new DialogInterface.OnClickListener() {
@@ -272,6 +275,10 @@ public class ModificacionesDatos extends AppCompatActivity implements View.OnCli
                     edtDescripcionHobbie.setText("");
                     edtTiempoHobbie.setText("");
                     Toast.makeText(getApplicationContext(), "Alumno Eliminado",Toast.LENGTH_SHORT).show();
+                    edtBusqueda.setText("");
+                    ListarHobbies();
+                    siguiente.setEnabled(false);
+                    anterior.setEnabled(false);
                 }
             });
             Diaboton.setNegativeButton("NO", new DialogInterface.OnClickListener() {

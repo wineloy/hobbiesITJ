@@ -29,9 +29,9 @@ public class RegistrarHobbies extends AppCompatActivity implements View.OnClickL
         btnRegistroHobbie.setOnClickListener(this);
         //Vistas
         edtNumeroControl = findViewById(R.id.edtNumeroControl);
-        edtNombre = findViewById(R.id.edtNombre);
+        edtNombre = findViewById(R.id.edtNombreprimer);
         edtSexo = findViewById(R.id.edtSexo);
-        edtTelefono = findViewById(R.id.edtTelefono);
+        edtTelefono = findViewById(R.id.edtTelefonoprimero);
         edtDescripcionHobbie = findViewById(R.id.edtDescripcionHobbie);
         edtTiempoHobbie = findViewById(R.id.edtTiempoHobbie);
 
